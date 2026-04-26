@@ -1,17 +1,19 @@
-import java.util.Scanner;
-
 public class program4 
 {
     public static void main(String[] args) 
     {
-        Scanner sc = new Scanner(System.in);
 
-        int iMarks = 0;
-        iMarks = sc.nextInt();
-        float fAns = 0;
-        fAns = (((float)iMarks / 100)*100);
+        int num1 = 0b101; // binary = 5;
+        System.out.println(num1);
 
-        System.out.print("Marks Obtained Are : " + fAns);
+        int num2 = 0x10; // hexadecimal = 16
+        System.out.println(num2);
 
+        byte b = 127;
+        int a = 12;
+        byte k = (byte)a; // if suppose the variable is outoff range of byte then it divide by 256 and remainder is get store
+        System.out.println(k);
+
+        
     }    
 }

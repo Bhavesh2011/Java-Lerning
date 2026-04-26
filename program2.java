@@ -1,17 +1,13 @@
-import java.util.Scanner;
-
-public class program2 
+public class program2
 {
     public static void main(String[] args) 
     {
-        Scanner sc = new Scanner(System.in);
+        int num = 3;
+        int num2 = 4;
 
-        int iMarks = sc.nextInt();
+        System.out.println(3 + 5);
+        System.out.println(3 + 9);
 
-        int iAns = 0;
-
-        iAns = ((iMarks / 100) * 100);
-
-        System.out.println(iAns);
-    }    
+        System.out.println(num + num2);
+    }
 }
