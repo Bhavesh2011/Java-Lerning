@@ -1,27 +1,34 @@
-import java.util.Scanner;
-
 public class program6 
 {
     public static void main(String[] args) 
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter The Interation");
-        int iAns = 0;
-        iAns = sc.nextInt();
-
-        Display.Display(iAns);
-    }    
-}
-
-class Display
-{
-    public static void Display(int iValue)
-    {
-        int i = 0;
-
-        for(i = 1; i <= iValue; i++)
+        int j = 0;
+        
+        for(int i = 0; i <= 5; i++)
         {
-            System.out.println("Hello");
+            System.out.println("Hii .......");
+        }  
+        while(j <= 5)
+        {
+              System.out.println(j);
+              j++;  
+        } 
+
+        int i = 0;
+        j = 0;
+
+        while(i <= 7)
+        {
+            j = 1;
+            while(j <= 24)
+            {
+                System.out.println(j);
+                j++;
+            }
+            i++;
         }
-    }
+
+
+
+    }    
 }

@@ -1,46 +1,42 @@
-import java.util.Scanner;
-
-class Program5
+public class program5 
 {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter Your Percentage: ");
-        float fValue = sc.nextFloat();
-
-        Percentage.DisplayClass(fValue);
-    }
-}
-
-
-class Percentage
-{
-    public static void DisplayClass(float fPerc)
-    {
-        if ((fPerc < 0.0f) || (fPerc > 100.0f))
+        int num1 = 10;
+        if(num1 < 9)
         {
-            System.out.println("Unable to proceed because it is Invalid");
-        }
-        else if ((fPerc >= 0.0f) && (fPerc < 35.0f))
-        {
-            System.out.println("The candidate is Fail");
-        }
-        else if ((fPerc >= 35.0f) && (fPerc < 50.0f))
-        {
-            System.out.println("The candidate is Pass Class");
-        }
-        else if ((fPerc >= 50.0f) && (fPerc < 60.0f))
-        {
-            System.out.println("The candidate is Second Class");
-        }
-        else if ((fPerc >= 60.0f) && (fPerc < 70.0f))
-        {
-            System.out.println("The candidate is First Class");
+            System.out.println("True");
         }
         else
         {
-            System.out.println("The candidate is First Class with Distinction");
+            System.out.println("false");
         }
-    }
+
+        int bflag = 3;
+        switch (bflag) 
+        {
+            case 3:
+                System.out.println("true");
+                break;
+            case 4:
+                System.out.println("false");
+                break;
+        
+            default:
+                System.out.println("its ookkk");
+                break;
+        }
+
+        //Ternary Operator
+
+        int n= 5;
+        int re = 0;
+
+        re = n%2 == 0 ? 10 : 20;
+
+        // If true then 10 if false then 20
+
+        System.out.println(re);
+        
+    }    
 }
